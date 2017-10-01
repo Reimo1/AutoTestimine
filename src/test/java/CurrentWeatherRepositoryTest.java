@@ -1,7 +1,8 @@
 import currentWeatherData.WeatherRepository.Weather;
 import currentWeatherData.WeatherRepository.WeatherRepository;
-import currentWeatherData.currentWeather.CurrentWeatherReport;
+import currentWeatherData.weatherReport.CurrentWeatherReport;
 import currentWeatherData.weather.*;
+import currentWeatherData.weatherReport.WeatherRequest;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -10,10 +11,8 @@ import static org.junit.Assert.*;
 public class CurrentWeatherRepositoryTest {
     private static CurrentWeatherReport report;
     private static WeatherRequest request;
-    private static String exampleCityName;
     private static Coordinates exampleCoordinates;
-    private static String exampleCountryCode;
-
+    
     @Before
     public void setUpTests() {
         exampleCoordinates = new Coordinates(24.75, 59.44);

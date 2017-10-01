@@ -1,10 +1,9 @@
 package currentWeatherData.WeatherRepository;
 
-import currentWeatherData.currentWeather.CurrentWeatherReport;
+import currentWeatherData.weatherReport.CurrentWeatherReport;
 import currentWeatherData.exceptions.WeatherReportNotFoundException;
-import currentWeatherData.weather.WeatherRequest;
-
-import java.io.IOException;
+import currentWeatherData.weatherReport.ForecastWeatherReport;
+import currentWeatherData.weatherReport.WeatherRequest;
 
 public class WeatherRepository implements Weather{
 
@@ -13,10 +12,10 @@ public class WeatherRepository implements Weather{
         throw new WeatherReportNotFoundException("Missing interface implementation");
     }
 
-    /*
+
     @Override
     public ForecastWeatherReport getForecastThreeDays(WeatherRequest request) throws WeatherReportNotFoundException {
         throw new WeatherReportNotFoundException("Missing interface implementation");
     }
-    */
+
 }
