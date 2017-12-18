@@ -1,0 +1,1 @@
+{"CurrentTemp":-22,"city":"Saku","dailyWeather":[{"maxTemp":14.2,"minTemp":13.3},{"maxTemp":-30.0,"minTemp":-33.1},{"maxTemp":43.4,"minTemp":-11.0}],"coordinates":{"latitude":43.5,"longitude":24.3}}

@@ -1,0 +1,17 @@
+[
+    {
+        "city": "Tallinn",
+        "countryCode": "EE",
+        "units": "metric"
+    },
+    {
+        "city": "Tartu",
+        "countryCode": "EE",
+        "units": "metric
+    },
+    {
+        "city": "Paris",
+        "countryCode": "FR",
+        "units": "metric
+    }
+]

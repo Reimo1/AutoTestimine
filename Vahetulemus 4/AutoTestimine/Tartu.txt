@@ -1,0 +1,1 @@
+{"CurrentTemp":1,"city":"Tartu","dailyWeather":[{"maxTemp":0.71,"minTemp":-1.2},{"maxTemp":-0.66,"minTemp":-3.73},{"maxTemp":-0.32,"minTemp":-3.79}],"coordinates":{"latitude":58.3806,"longtitude":26.7251}}

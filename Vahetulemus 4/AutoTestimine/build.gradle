@@ -1,0 +1,36 @@
+group 'AutoTestimine'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'maven-publish'
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    //compile 'com.google.code.gson:gson:2.8'
+    testCompile 'org.mockito:mockito-core:2.7'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    //compile 'org.openweathermap.java-api:api-core:1.0'
+
+}
+
+publishing {
+    publications {
+        jars(MavenPublication) {
+            pom.withXml {
+                asNode().appendNode('description',
+                        'Java API to access openweathermap.org API examples')
+            }
+        }
+    }
+}
+tasks.withType(Jar) { // includes War and Ear
+    manifest.getAttributes().put("Name", "org/openweathermap/api/example/")
+    manifest.getAttributes().put("Specification-Title", "OpenWeatherMap Java API:api-examples")
+    manifest.getAttributes().put("Implementation-Title", "org.openweathermap.api.example")
+}
